@@ -1,0 +1,165 @@
+/* Fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background: #f4f1ee;
+    font-family: 'Poppins', sans-serif;
+    color: #3e3e3e;
+}
+
+/* Texto de encabezado */
+.text_header {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 22px;
+    color: #4a4a4a;
+}
+
+.booking_section {
+    max-width: 720px;
+    margin: 50px auto;
+}
+
+.items_tab {
+    border-radius: 6px;
+    background-color: #fffdfc;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.itemListElement {
+    font-size: 14px;
+    line-height: 1.4;
+    border-bottom: 1px solid #e3e0dd;
+    cursor: pointer;
+    padding: 16px 12px 18px 12px;
+    transition: background 0.3s ease;
+}
+
+.itemListElement:hover {
+    background: #f1efec;
+}
+
+.item_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servide_name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    padding-right: 15px;
+    color: #6b6b6b;
+}
+
+.item_label {
+    color: #8a7e6b;
+    border-color: #8a7e6b;
+    background: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #8a7e6b;
+    border-color: #8a7e6b;
+}
+
+.item_select_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.select_item_bttn {
+    width: 55px;
+    display: flex;
+    margin-left: 30px;
+    justify-content: flex-end;
+}
+
+.service_duration_field {
+    text-align: right;
+    min-width: 60px;
+    color: #6f6f6f;
+    font-size: 14px;
+}
+
+.service_price_field {
+    display: flex;
+    margin-left: 30px;
+    align-items: baseline;
+}
+
+.radio_employee_select {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+/* Estilos para pasos del formulario */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #c2bfb8;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.step.active {
+    opacity: 1;
+    background-color: #a99d91;
+}
+
+.step.finish {
+    background-color: #7a9e7e;
+}
+
+/* Botones de navegación */
+.next_prev_buttons {
+    background-color: #7a9e7e;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next_prev_buttons:hover {
+    background-color: #67896b;
+}
+
+.tab_reservation {
+    display: none;
+}
+
+/* Campos del formulario */
+.client_details_div .form-control {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 18px 12px;
+    border: 2px solid #e0ddd9;
+    margin: 10px 0px;
+    transition: border-color 0.3s ease;
+}
+
+.client_details_div .form-control:focus {
+    border-color: #8a7e6b;
+    box-shadow: none;
+    outline: none;
+}
